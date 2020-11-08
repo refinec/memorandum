@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nbut.memorandum">
+    <!--手机震动授权-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/memorandum"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/memorandum"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <activity
+            android:name=".Edit"
+            android:label="编辑" />
+        <activity android:name=".Search"
+            android:label="搜索">
+
+        </activity>
+        <provider
+            android:name=".NoteProvider"
+            android:authorities="com.nbut.memorandum.provider"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".AlarmService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

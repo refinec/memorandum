@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name" >便签</string>
+    <string name="edit_title">标题</string>
+    <string name="search_hint">搜索便签</string>
+    <string-array name="type_name">
+        <item>学习</item>
+        <item>生活</item>
+        <item>其他</item>
+    </string-array>
+    <string name="edit_text">内容</string>
+</resources>

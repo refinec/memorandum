@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/searchButton"
+        android:icon="@drawable/search"
+        android:orderInCategory="100"
+        android:title="搜索"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/deleteGroup"
+        android:icon="@drawable/delete"
+        android:title="删除分组"
+        android:visible="true"
+        app:showAsAction="never" />
+</menu>
