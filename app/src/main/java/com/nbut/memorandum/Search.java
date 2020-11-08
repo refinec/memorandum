@@ -330,7 +330,7 @@ public class Search extends AppCompatActivity {
         if (screenList.get(num).isbAlarm()) {
             cancelAlarm(num);
         }
-        getContentResolver().update(uri, values, "num = ?", new String[]{String.valueOf(num)});
+        getContentResolver().update(uri, values, "id = ?", new String[]{String.valueOf(id)});
         screenList.set(num, new_note);
 
         //如果用户已设置闹钟
