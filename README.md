@@ -13,4 +13,4 @@
 - [ ] 查找备忘录时的关键字高亮
 - [ ] 提醒时间的重设及按钮取消
 
-![memorandum](C:\Users\c1539\Desktop\memorandum.gif)
+![memorandum](./app/src/main/res/drawable/memorandum.gif)
